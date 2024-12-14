@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заявка на Moderator Discord</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Заявка на Moderator Discord</h1>
+        <h2 class="subtitle">04</h2>
+        
+        <div id="page1" class="page">
+            <div class="criteria">
+                <h3>Критерії:</h3>
+                <ul>
+                    <li>✦ 16+ (можливі виключення до 15 років);</li>
+                    <li>✦ Досвід і знання функціоналу ігрового моду UKRAINE GTA;</li>
+                    <li>✦ Знання правил Discord серверу UKRAINE GTA;</li>
+                    <li>✦ Вміння працювати і кооперуватись в команді;</li>
+                    <li>✦ Клієнтоорієнтованість (комунікабельний, стриманий, скрупульозний);</li>
+                    <li>✦ Наявність мікрофону;</li>
+                    <li>✦ Мати мінімальні знання по функціоналу Discord.</li>
+                </ul>
+            </div>
+            <button id="startApplication" class="btn-blue">Подати заявку</button>
+        </div>
+
+        <form id="application-form">
+            <div id="page2" class="page">
+                <div class="form-group">
+                    <label for="email">📧 Електронна адреса:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="fullName">👤 Ваше прізвище, ім'я, по-батькові:</label>
+                    <input type="text" id="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">📅 Ваш вік:</label>
+                    <input type="number" id="age" min="15" max="99" required>
+                </div>
+                <div class="form-group">
+                    <label for="telegram">✈️ Ваш Telegram:</label>
+                    <input type="text" id="telegram" required>
+                </div>
+                <div class="form-group">
+                    <label for="discord">👾 Ваш Discord:</label>
+                    <input type="text" id="discord" required>
+                </div>
+            </div>
+
+            <div id="page3" class="page">
+                <div class="form-group">
+                    <label for="adequacy">✅ Наскільки ви оцініте свою адекватність?</label>
+                    <input type="range" id="adequacy" min="1" max="10" value="5">
+                    <span id="adequacy-value">5</span>
+                </div>
+                <div class="form-group">
+                    <label for="stress">🧘 Наскільки ви оцініте свою стресостійкість?</label>
+                    <input type="range" id="stress" min="1" max="10" value="5">
+                    <span id="stress-value">5</span>
+                </div>
+                <div class="form-group">
+                    <label for="learning">📚 Наскільки швидко ви засвоюєте новий матеріал?</label>
+                    <input type="range" id="learning" min="1" max="10" value="5">
+                    <span id="learning-value">5</span>
+                </div>
+                <div class="form-group">
+                    <label for="traits">💭 Назвіть позитивні 3 та 3 негативні риси Вашого характеру:</label>
+                    <textarea id="traits" required></textarea>
+                </div>
+            </div>
+
+            <div id="page4" class="page">
+                <div class="form-group">
+                    <label for="hadBans">🚫 Чи були у вас блокування на Discord-серверах Ukraine GTA / Ukraine GTA V?</label>
+                    <select id="hadBans" required>
+                        <option value="">Оберіть відповідь</option>
+                        <option value="yes">Так</option>
+                        <option value="no">Ні</option>
+                    </select>
+                </div>
+                <div id="banReason" class="form-group" style="display: none;">
+                    <label for="banReasonText">Вкажіть причину блокування:</label>
+                    <textarea id="banReasonText"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="wasModeratorBefore">👮 Чи займали ви раніше посаду модератора Discord або схожу посаду?</label>
+                    <select id="wasModeratorBefore" required>
+                        <option value="">Оберіть відповідь</option>
+                        <option value="yes">Так</option>
+                        <option value="no">Ні</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="isTeamPlayer">👥 Чи вважаєте ви себе командним гравцем?</label>
+                    <select id="isTeamPlayer" required>
+                        <option value="">Оберіть відповідь</option>
+                        <option value="yes">Так</option>
+                        <option value="no">Ні</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="hasMicrophone">🎙️ Чи маєте ви мікрофон для виконання щоденної норми?</label>
+                    <select id="hasMicrophone" required>
+                        <option value="">Оберіть відповідь</option>
+                        <option value="yes">Так</option>
+                        <option value="no">Ні</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="hoursAvailable">⏰ Скільки годин можете приділяти посаді M.D?</label>
+                    <input type="text" id="hoursAvailable" required>
+                </div>
+                <div class="form-group">
+                    <label for="acceptsBlacklist">📝 Чи готові ви отримати ЧС на посаду модератора Discord у разі, якщо не пройдете стажування протягом 14 днів?</label>
+                    <select id="acceptsBlacklist" required>
+                        <option value="">Оберіть відповідь</option>
+                        <option value="yes">Так</option>
+                        <option value="no">Ні</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button type="button" id="prevPage" class="btn-red">Назад</button>
+                <button type="button" id="nextPage" class="btn-blue">Далі</button>
+                <button type="submit" id="submit" class="btn-blue" style="display: none;">Відправити заявку</button>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
